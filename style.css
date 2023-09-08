@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    height:100vh;
+   
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(248, 231, 240);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    max-width: 80px;
+    
+
+}
+.logo{
+    height:80px;
+    width:200px;
+}
+header ul{
+    position: relative;
+    display: flex;
+
+}
+header ul li{
+    list-style: none;
+    
+}
+header ul li a{
+display: inline-block;
+color:#333;
+font-weight: 400;
+font-size: 20px;
+margin-left:40px;
+text-decoration: none;
+}
+header ul li a:hover{
+      background: #3ceff5;
+      color:whitesmoke;
+       padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 100;
+
+}
+.content{
+    position: relative;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textbox{
+position: relative;
+max-width: 600px;
+
+}
+.content .textbox h2{
+    color:#333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500px;
+}
+.content .textbox h2 span{
+    color:#3ceff5;
+    font-size: 1.2em;
+    font-weight: 900px;
+}
+.content .textbox p{
+    color:#333;
+
+}
+.content .textbox a{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: #3ceff5;
+    color:#053b25;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .imgbox{
+    width:1300px;
+    height:600px;
+    display: flex;
+    justify-content: flex-end;
+     transform:rotate(-8deg);
+     padding-right: 55px;
+     margin-top: 50px;
+}
+.content .imgbox img{
+    max-width: 740px;
+}
+
+
+.sci{
+    position:absolute;
+    top:50%;
+    right:70px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:60px;
+    width:30px;
+
+}
+.sci li{
+    list-style: none;
+
+}
+.sci li img{
+    height:60px;
+    width:60px;
+    
+    cursor:pointer;
+    transform:scale(0.6);
+}
+.sci li a{
+    display: inline-block;
+    margin :5px 0;
+    filter:invert(1);
+     
+}
+.circle{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #3ceff5;
+    clip-path: circle(700px at right 900px);
+}
+    
+.services {
+    padding: 100px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    flex-basis: calc(50% - 20px); /* To create two columns on larger screens */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.service-card img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain the aspect ratio of the image */
+    display: block; /* Remove extra spacing below inline images */
+    margin: 0 auto 10px; /* Center the image horizontally and add spacing below */
+    border-radius: 50%; /* Create rounded images */
+    max-height: 150px; 
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #666;
+}
+.service-card:hover {
+    transform: scale(1.05); /* Increase the scale on hover (you can adjust this value) */
+    box-shadow: 0px 0px 15px rgba(255, 105, 180, 0.7); /* Add a pink shadow on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions */
+    background-color: #ff69b4; /* Change the background color to pink on hover */
+    color: #fff; /* Change the text color to white on hover */
+}
+.content {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+}
+
+.left img {
+    /* Adjust to cover at least half of the page */
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.right {
+    flex-grow: 1;
+    padding-left: 40px;
+    text-align: left;
+}
+
+.black-heading {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.blue-heading {
+    color: #050505;
+    font-size: 20px;
+}
+
+.numerical-data-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.numeric-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: rgba(243, 174, 177, 0.2); /* Transparent box background */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.blue-digit {
+    color: #3ceff5;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.numeric-item:hover {
+    background-color: #f01a48; /* Change the background color on hover */
+    color: #fff; /* Change the text color on hover to white */
+}
